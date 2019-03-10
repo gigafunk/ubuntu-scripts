@@ -11,8 +11,8 @@
 . /usr/local/sbin/flashair-common
 
 # check if connected to flashair wifi network
-#FLASHAIR_INTERFACE=$(iwconfig | grep "ESSID" | grep "${FLASHAIR_NAME}_" | cut -d' ' -f1)
-FLASHAIR_INTERFACE=1
+FLASHAIR_INTERFACE=$(iwconfig | grep "ESSID" | grep "${FLASHAIR_NAME}_" | cut -d' ' -f1)
+#FLASHAIR_INTERFACE=1
 # check if flashair daemon is running
 start-stop-daemon --status --name "${FLASHAIR_DAEMON_NAME}"
 FLASHAIR_DAEMON_STATUS=$?

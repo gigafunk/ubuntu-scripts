@@ -45,4 +45,4 @@ sudo wget -O /usr/local/share/file-manager/actions/flashair-action-upload.deskto
 sudo wget -O /usr/local/share/file-manager/actions/flashair-action-delete.desktop https://raw.githubusercontent.com/gigafunk/ubuntu-scripts/master/flashair/flashair-action-delete.desktop
 
 # restart networking services
-sudo service networking restart
+sudo service network-manager restart
